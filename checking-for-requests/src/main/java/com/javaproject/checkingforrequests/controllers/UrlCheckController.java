@@ -16,7 +16,7 @@ public class UrlCheckController {
     private final String IS_IT_DOWN = "The site is down!";
     private final String INCORRECT_URL = "The url is incorrrect";
     
-    @GetMapping("/check")
+    @GetMapping("/check_request")
     public String getStatus(@RequestParam String url) {
         String returnMessage = "";
         try {
